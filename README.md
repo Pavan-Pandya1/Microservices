@@ -62,21 +62,23 @@ This repository contains a set of microservices designed to operate as a distrib
 ---
 
 ## Project Structure
+
+```
 .
-├── api/ # Protobuf/API definitions
-├── cmd/ # Entrypoints for each microservice
-│ ├── serviceA/
-│ ├── serviceB/
-│ └── gateway/
-├── internal/ # Shared/internal packages
-├── pkg/ # Service-specific logic
-├── configs/ # Configuration files
-├── deploy/ # Docker/K8s scripts
-├── tests/ # Integration/E2E tests
+├── api/                # Protobuf/API definitions
+├── cmd/                # Entrypoints for each microservice
+│   ├── serviceA/
+│   ├── serviceB/
+│   └── gateway/
+├── internal/           # Shared/internal packages
+├── pkg/                # Service-specific logic
+├── configs/            # Configuration files
+├── deploy/             # Docker/K8s scripts
+├── tests/              # Integration/E2E tests
 ├── go.mod
 ├── go.sum
 └── README.md
-
+```
 ---
 
 ## Getting Started
