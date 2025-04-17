@@ -33,10 +33,10 @@ func (h *OrdersHttpHandler) CreateOrder(w http.ResponseWriter, r *http.Request) 
 	}
 
 	order := &orders.Order{
-		order_id:    42,
-		customer_id: req.GetCustomerID(),
-		product_id:  req.GetProductID(),
-		quantity:    req.GetQuantity(),
+		OrderID:    42,
+		CustomerID: req.GetCustomerID(),
+		ProductID:  req.GetProductID(),
+		Quantity:   req.GetQuantity(),
 	}
 
 	err = h.ordersService.CreateOrder(r.Context(), order)
