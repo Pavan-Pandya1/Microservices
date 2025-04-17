@@ -1,8 +1,8 @@
-# run-orders:
-# 	@go run services/orders/*.go
+run-orders:
+	@go run services/orders/*.go
 
-# run-kitchen:
-# 	@go run services/kitchen/*.go
+run-kitchen:
+	@go run services/kitchen/*.go
 
 PROTO_DIR=protobuf
 OUT_DIR=services/common/genproto/orders

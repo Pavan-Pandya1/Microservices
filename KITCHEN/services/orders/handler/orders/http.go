@@ -3,9 +3,9 @@ package handler
 import (
 	"net/http"
 
-	"github.com/Pavan-pandya1/Microservices/kitchen/services/common/genproto/orders"
-	"github.com/Pavan-pandya1/Microservices/kitchen/services/common/util"
-	"github.com/Pavan-pandya1/Microservices/kitchen/services/orders/types"
+	"github.com/Pavan-pandya1/Microservices/KITCHEN/KITCHEN/services/common/genproto/orders"
+	"github.com/Pavan-pandya1/Microservices/KITCHEN/KITCHEN/services/common/util"
+	"github.com/Pavan-pandya1/Microservices/KITCHEN/KITCHEN/services/orders/types"
 )
 
 type OrdersHttpHandler struct {
@@ -33,10 +33,10 @@ func (h *OrdersHttpHandler) CreateOrder(w http.ResponseWriter, r *http.Request) 
 	}
 
 	order := &orders.Order{
-		OrderID:    42,
-		CustomerID: req.GetCustomerID(),
-		ProductID:  req.GetProductID(),
-		Quantity:   req.GetQuantity(),
+		order_id:    42,
+		customer_id: req.GetCustomerID(),
+		product_id:  req.GetProductID(),
+		quantity:    req.GetQuantity(),
 	}
 
 	err = h.ordersService.CreateOrder(r.Context(), order)

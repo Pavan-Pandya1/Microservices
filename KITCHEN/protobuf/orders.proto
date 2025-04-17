@@ -11,18 +11,18 @@ service OrderService {
 
 // Message representing an order
 message Order {
-    int32 order_id = 1;
-    int32 customer_id = 2;
-    int32 product_id = 3;
-    int32 quantity= 4;
+    int32 OrderID = 1;
+    int32 CustomerID = 2;
+    int32 ProductID = 3;
+    int32 Quantity= 4;
     //string status = 5;
 }
 
 // Message to create a new order //type of enum
 message CreateOrderRequest {
-  int32 product_id = 1;
-  int32  customer_id = 2;
-  int32 quantity = 3;
+  int32 ProductID = 1;
+  int32  CustomerID = 2;
+  int32 Quantity = 3;
 }
 
 // Message to return after creating an order
@@ -33,7 +33,7 @@ message CreateOrderResponse {
 
 // Message to request an order by ID
 message GetOrderRequest {
-  int32 customer_id = 1;
+  int32 CustomerID = 1;
 }
 
 message GetOrderResponse {
