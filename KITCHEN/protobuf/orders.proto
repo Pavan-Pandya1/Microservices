@@ -6,7 +6,7 @@ package orders;
 // The order service
 service OrderService {
   rpc CreateOrder (CreateOrderRequest) returns (CreateOrderResponse);
-  //rpc GetOrder (OrderId) returns (Order);
+  rpc GetOrders (GetOrderRequest) returns (GetOrderResponse);
 }
 
 // Message representing an order
