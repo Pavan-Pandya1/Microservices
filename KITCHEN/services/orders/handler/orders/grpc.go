@@ -3,8 +3,8 @@ package handler
 import (
 	"context"
 
-	"github.com/Pavan-pandya1/Microservices/kitchen/services/common/genproto/orders"
-	"github.com/Pavan-pandya1/Microservices/kitchen/services/orders/types"
+	"github.com/Pavan-pandya1/Microservices/KITCHEN/KITCHEN/services/common/genproto/orders"
+	"github.com/Pavan-pandya1/Microservices/KITCHEN/KITCHEN/services/orders/types"
 	"google.golang.org/grpc"
 )
 
@@ -33,10 +33,10 @@ func (h *OrdersGrpcHandler) GetOrders(ctx context.Context, req *orders.GetOrders
 
 func (h *OrdersGrpcHandler) CreateOrder(ctx context.Context, req *orders.CreateOrderRequest) (*orders.CreateOrderResponse, error) {
 	order := &orders.Order{
-		OrderID:    42,
-		CustomerID: 2,
-		ProductID:  1,
-		Quantity:   10,
+		order_id:    42,
+		customer_id: 2,
+		product_id:  1,
+		quantity:    10,
 	}
 
 	err := h.ordersService.CreateOrder(ctx, order)

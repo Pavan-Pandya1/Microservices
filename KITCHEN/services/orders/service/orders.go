@@ -5,13 +5,18 @@ package service
 import (
 	"context"
 
-	"github.com/Pavan-pandya1/Microservices/kitchen/services/common/genproto/orders"
+	"github.com/Pavan-pandya1/Microservices/KITCHEN/KITCHEN/services/common/genproto/orders"
 )
 
 var ordersDb = make([]*orders.Order, 0)
 
 type OrderService struct {
 	// store
+}
+
+// CreateOrer implements types.OrderService.
+func (s *OrderService) CreateOrer(context.Context, *orders.Order) error {
+	panic("unimplemented")
 }
 
 func NewOrderService() *OrderService {

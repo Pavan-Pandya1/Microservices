@@ -4,8 +4,8 @@ import (
 	"log"
 	"net"
 
-	handler "github.com/Pavan-pandya1/Microservices/kitchen/services/orders/handler/orders"
-	"github.com/Pavan-pandya1/Microservices/kitchen/services/orders/service"
+	handler "github.com/Pavan-pandya1/Microservices/KITCHEN/KITCHEN/services/orders/handler/orders"
+	"github.com/Pavan-pandya1/Microservices/KITCHEN/KITCHEN/services/orders/service"
 	"google.golang.org/grpc"
 )
 
