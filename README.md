@@ -100,7 +100,7 @@ cd Microservices
 
 make proto
 
-2. ** Now, Run each service (in seprate terminals):**
+2. **Now, Run each service (in seprate terminals):**
 
 go run cmd/serviceA/main.go
 go run cmd/serviceB/main.go
