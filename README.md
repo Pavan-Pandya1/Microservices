@@ -28,9 +28,9 @@ This repository contains a set of microservices designed to operate as a distrib
 
 ## Architecture
 
-Client --> (HTTP/JSON) --> API Gateway
-API Gateway --> (gRPC/REST) --> [Service A, Service B, Service C, ...]
-Services <--> Database(s)
+- Client --> (HTTP/JSON) --> API Gateway
+- API Gateway --> (gRPC/REST) --> [Service A, Service B, Service C, ...]
+- Services <--> Database(s)
 
 
 - **API Gateway**: Routes client requests to appropriate backend services.
@@ -62,21 +62,20 @@ Services <--> Database(s)
 ---
 
 ## Project Structure
-
-├── api/ # Protobuf files for gRPC and API definitions
+.
+├── api/ # Protobuf/API definitions
 ├── cmd/ # Entrypoints for each microservice
 │ ├── serviceA/
 │ ├── serviceB/
 │ └── gateway/
-├── internal/ # Shared/internal packages (business logic, models)
+├── internal/ # Shared/internal packages
 ├── pkg/ # Service-specific logic
-├── configs/ # Configuration files (env, YAML, etc.)
-├── deploy/ # Docker and deployment scripts
-├── tests/ # Integration and E2E tests
+├── configs/ # Configuration files
+├── deploy/ # Docker/K8s scripts
+├── tests/ # Integration/E2E tests
 ├── go.mod
 ├── go.sum
 └── README.md
-
 
 ---
 
